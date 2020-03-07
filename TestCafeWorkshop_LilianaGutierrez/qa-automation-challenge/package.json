@@ -1,0 +1,15 @@
+{
+  "name": "qa-automation-challenge",
+  "version": "1.0.0",
+  "description": "QA Automation Challenge Project",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome src/saucedemo/tests/login.tests.js --selector-timeout 15000 --assertion-timeout 15000",
+    "test:all":"testcafe chrome,ie,firefox src/saucedemo/tests/login.tests.js --selector-timeout 15000 --assertion-timeout 15000" 
+  },
+  "author": "LGR",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^1.8.2"
+  }
+}
